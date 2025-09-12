@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: openmeteo-at2-25506751-oishik
+Version: 0.1.2
+Summary: Custom helper package for Open Meteo AT2 assignment
+Author-email: Oishik <youremail@example.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: requests
+
+# AT2 Experimentation Repository (placeholder)
+
+This folder contains the experimentation code, notebooks and training scripts for the AT2 assignment.
+**IMPORTANT:** This is a prepared template and includes working scripts and placeholders. Replace the student id in notebook filenames and fill in your experiments.
+
+Structure:
+- notebooks/
+  - rain_or_not/ (classification experiments notebooks)
+  - precipitation_fall/ (regression experiments notebooks)
+- src/ (data fetch, feature engineering, training scripts)
+- data/ (placeholders - generate using fetch scripts)
+- models/ (store trained models here)
+- reports/ (store experiment reports and metrics here)
+- requirements.txt, pyproject.toml
+
+Quick start:
+1. Create virtualenv:
+   python3 -m venv .venv
+   source .venv/bin/activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Fetch data (example, may be rate-limited):
+   python src/fetch_all_years.py
+
+4. Merge:
+   python src/merge_daily.py
+
+5. Build features:
+   python src/build_features_table.py
+
+6. Train:
+   python src/train.py
+
+Notes:
+- You MUST keep any data from 2025+ out of training (use as production only) per brief.
+- Save your best model artifacts into models/ and your notebooks into notebooks/.

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openmeteo-at2-25506751-oishik"
+version = "0.1.2"
+description = "Custom helper package for Open Meteo AT2 assignment"
+authors = [
+  { name = "Oishik", email = "youremail@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "requests"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
