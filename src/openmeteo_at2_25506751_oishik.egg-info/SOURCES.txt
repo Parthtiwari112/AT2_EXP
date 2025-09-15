@@ -1,4 +1,3 @@
-README.md
 pyproject.toml
 src/openmeteo_at2_25506751/__init__.py
 src/openmeteo_at2_25506751/build_features_table.py
